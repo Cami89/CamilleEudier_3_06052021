@@ -1,7 +1,9 @@
 
 @font-face {
-    font-family: "Roboto";
-    src: url("Police/roboto/Roboto-Regular.ttf") format("ttf");
+    font-family: "Roboto", "Shrikhand";
+    src: 
+    url("Police/roboto/Roboto-Regular.ttf") format("ttf"), 
+    url("Police/Shrikhand/Shrikhand-Regular.ttf") format("ttf");
 }
 
 body 
@@ -11,15 +13,11 @@ body
     
 
 }
-img[class=resto-pix] 
+img[class=resto-pic] 
 {
     width: 50%;
 }
 ul
 {
     list-style: none;
-}
-h2
-{
-    font-size: 1em;
 }
