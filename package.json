@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/header.scss:./css/header.css"
+    "sass": "sass --watch ./scss/header.scss:./css/header.css ./scss/footer.scss:./css/footer.css ./scss/section.scss:./css/section.css" 
   },
   "author": "",
   "license": "ISC",
