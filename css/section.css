@@ -4,8 +4,12 @@
 /*header city shadow*/
 section[class=fonct] {
   padding-left: 0.5em;
+  margin-top: 2.5em;
 }
-section[class=fonct] .fonct-num {
+section[class=fonct] .fonct-list {
+  padding-left: 0em;
+}
+section[class=fonct] .fonct-list .fonct-num {
   border-radius: 3em;
   background-color: #9356DC;
   padding: 0.2em 0.6em 0.2em 0.6em;
@@ -14,11 +18,11 @@ section[class=fonct] .fonct-num {
   margin-top: 1.5em;
   height: 1.3em;
 }
-section[class=fonct] .fas.fonct {
+section[class=fonct] .fonct-list .fas.fonct {
   padding: 1.5em;
   color: #4c4c4c;
 }
-section[class=fonct] .fonct-step {
+section[class=fonct] .fonct-list .fonct-step {
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -26,8 +30,75 @@ section[class=fonct] .fonct-step {
   border-radius: 1em;
   margin: 0em 1em 1em 1em;
   padding: 0em 0.5em 0.5em 0em;
-  -webkit-box-shadow: -1px 10px 13px -5px #b0b0b0;
   box-shadow: -1px 10px 13px -5px #b0b0b0;
+}
+
+section[class=resto] {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  margin-top: 3em;
+  padding-bottom: 3em;
+}
+section[class=resto] h2[class=resto-title] {
+  padding: 0.5em;
+  margin-bottom: 0em;
+}
+section[class=resto] ul[class=resto-list] {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0em;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] {
+  box-shadow: -1px 10px 13px -5px #b0b0b0;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] img[class=resto-pic] {
+  width: 100%;
+  border-radius: 1em 1em 0em 0em;
+  height: 10em;
+  object-fit: cover;
+  z-index: 1;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-new {
+  background-color: #99E2D0;
+  color: #2D8671;
+  width: 4.5em;
+  text-align: center;
+  padding: 0.3em;
+  margin-left: 70%;
+  margin-bottom: -2.5em;
+  position: relative;
+  z-index: 2;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres {
+  background-color: white;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 0em 0em 1em 1em;
+  margin-top: -0.5em;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-name {
+  display: flex;
+  justify-content: space-between;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-name .far.fa-heart {
+  margin-top: 0.5em;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-name:hover {
+  color: #9356DC;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-loc {
+  margin-top: -1em;
 }
 
 /*# sourceMappingURL=section.css.map */

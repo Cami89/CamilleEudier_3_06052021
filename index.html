@@ -26,7 +26,7 @@
 
     <section class="fonct">
         <h2>Fonctionnement</h2>
-        <ul>
+        <ul class="fonct-list">
             <li class="fonct-step">
                 <span class="fonct-num">1</span>
                 <i class="fas fa-mobile-alt fonct"></i>
@@ -46,40 +46,44 @@
     </section>
 
     <section class="resto">
-        <h2>Restaurants</h2>
-        <ul>
-            <li>
-                <a href="la_palette_du_gout.html">
-                    <p>Nouveau</p>
+        <h2 class="resto-title">Restaurants</h2>
+        <ul class="resto-list">
+            <li class="resto-prev">
+                <a class="resto-link" href="la_palette_du_gout.html">
+                    <p class="resto-new">Nouveau</p>
                     <img src="images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût" class="resto-pic">
-                    <h3>La palette du goût</h3>
-                    <i class="far fa-heart"></i>
-                    <p>Ménilmontant</p>
+                    <div class="resto-pres">
+                        <h3 class="resto-name">La palette du goût <i class="far fa-heart"></i></h3>
+                        <p class="resto-loc">Ménilmontant</p>
+                    </div>
                 </a>
             </li>
-            <li>
-                <a href="la_note_enchantee.html">
-                    <p>Nouveau</p>
+            <li class="resto-prev">
+                <a class="resto-link" href="la_note_enchantee.html">
+                    <p class="resto-new">Nouveau</p>
                     <img src="images/restaurants/la_note_enchantee.jpg" alt="La note enchantée" class="resto-pic">
-                    <h3>La note enchantée</h3>
-                    <i class="far fa-heart"></i>
-                    <p>Charonne</p>
+                    <div class="resto-pres">
+                        <h3 class="resto-name">La note enchantée <i class="far fa-heart"></i></h3>
+                        <p class="resto-loc">Charonne</p>
+                    </div>
                 </a>
             </li>
-            <li>
-                <a href="a_la_francaise.html">
+            <li class="resto-prev">
+                <a class="resto-link" href="a_la_francaise.html">
                     <img src="images/restaurants/a_la_francaise.jpg" alt="A la française" class="resto-pic">
-                    <h3>A la française</h3>
-                    <i class="far fa-heart"></i>
-                    <p>Cité Rouge</p>
+                    <div class="resto-pres">
+                        <h3 class="resto-name">A la française <i class="far fa-heart"></i></h3>
+                        <p class="resto-loc">Cité Rouge</p>
+                    </div>
                 </a>
             </li>
-            <li>
-                <a href="le_delice_des_sens.html">
+            <li class="resto-prev">
+                <a class="resto-link" href="le_delice_des_sens.html">
                     <img src="images/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens" class="resto-pic">
-                    <h3>Le délice des sens</h3>
-                    <i class="far fa-heart"></i>
-                    <p>Folie-Méricourt</p>
+                    <div class="resto-pres">
+                        <h3 class="resto-name">Le délice des sens <i class="far fa-heart"></i></h3>
+                        <p class="resto-loc">Folie-Méricourt</p>
+                    </div>
                 </a>
             </li>
         </ul>
@@ -88,10 +92,10 @@
     <footer>
         <img src="images/logo/logo_ohmyfood.png" alt="logo" class="footer-logo">
         <ul>
-            <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+            <li class="footer-list"><i class="fas fa-utensils footer"></i><p class="footer-prop">Proposer un restaurant</p></li>
+            <li class="footer-list"><i class="fas fa-hands-helping footer"></i><p class="footer-prop">Devenir partenaire</p></li>
+            <li class="footer-list">Mentions légales</li>
+            <li class="footer-list">Contact</li>
         </ul>
     </footer>
 

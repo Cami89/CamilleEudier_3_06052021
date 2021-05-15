@@ -1,5 +1,27 @@
-.footer-logo {
+footer {
+  background-color: #282B2A;
+  color: white;
+  padding: 0.5em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+footer .footer-logo {
   width: 30%;
+  padding: 1em 1em 0em 0.5em;
+}
+footer li[class=footer-list] {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer li[class=footer-list] .fas.footer {
+  margin-right: 1em;
+  width: 1em;
+}
+footer li[class=footer-list] .footer-prop {
+  margin-bottom: 0em;
+  margin-top: 0em;
 }
 
 /*# sourceMappingURL=footer.css.map */

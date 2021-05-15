@@ -3,32 +3,118 @@ $lightgrey : #f5f5f5; /*header presentation background*/
 $darkgrey : #4c4c4c; /*city & presentation text*/
 $shadow: #b0b0b0; /*header city shadow*/
 $primary-color: #9356DC;
+$tertiary-color: #99E2D0;
+$tertiary-color-dark: #2D8671;
 
 section[class="fonct"] {
     padding-left: 0.5em;
+    margin-top: 2.5em;
+    .fonct-list {
+        padding-left: 0em;
+        .fonct-num {
+            border-radius: 3em;
+            background-color: $primary-color;
+            padding: 0.2em 0.6em 0.2em 0.6em;
+            color: white;
+            margin-left: -1em;
+            margin-top: 1.5em;
+            height: 1.3em;
+        }
+        .fas.fonct {
+            padding: 1.5em;
+            color: $darkgrey;
+    }
+        .fonct-step {
+            display: flex;
+            flex-direction: row;
+            align-content: space-around;
+            background-color: $lightgrey;
+            border-radius: 1em;
+            margin: 0em 1em 1em 1em;
+            padding: 0em 0.5em 0.5em 0em;
+            box-shadow: -1px 10px 13px -5px $shadow;
+        }
+    }
 
-    .fonct-num {
-        border-radius: 3em;
-        background-color: $primary-color;
-        padding: 0.2em 0.6em 0.2em 0.6em;
-        color: white;
-        margin-left: -1em;
-        margin-top: 1.5em;
-        height: 1.3em;
+    
+}
+
+section[class="resto"] {
+    display: flex;
+    flex-direction: column;
+    background-color: $lightgrey;
+    margin-top: 3em;
+    padding-bottom: 3em;
+
+    h2[class="resto-title"] {
+        padding: 0.5em;
+        margin-bottom: 0em;
     }
-    .fas.fonct {
-        padding: 1.5em;
-        color: $darkgrey;
-    }
-    .fonct-step {
+    ul[class="resto-list"] {
         display: flex;
-        flex-direction: row;
-        align-content: space-around;
-        background-color: $lightgrey;
-        border-radius: 1em;
-        margin: 0em 1em 1em 1em;
-        padding: 0em 0.5em 0.5em 0em;
-        -webkit-box-shadow: -1px 10px 13px -5px $shadow;
-        box-shadow: -1px 10px 13px -5px $shadow;
+        flex-direction: column;
+        margin-top: 0em;
+
+        li[class="resto-prev"] {
+            box-shadow: -1px 10px 13px -5px $shadow;
+            margin-bottom: 1em;
+            border-radius: 1em;
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            a[class="resto-link"] {
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+                img[class=resto-pic] {   
+                width: 100%;
+                border-radius: 1em 1em 0em 0em;
+                height: 10em;
+                object-fit: cover;
+                z-index:1;
+                }
+                .resto-new {
+                background-color: $tertiary-color ;
+                color: $tertiary-color-dark;
+                width: 4.5em;
+                text-align: center;
+                padding: 0.3em;
+                margin-left: 70%;
+                margin-bottom: -2.5em;
+                position: relative;
+                z-index:2;
+                }
+    
+                .resto-pres {
+                background-color: white;
+                padding: 0.5em 1em 0.5em 1em;
+                border-radius: 0em 0em 1em 1em;
+                margin-top: -0.5em;
+    
+                    .resto-name {
+                        display: flex;
+                        justify-content: space-between;
+                        .far.fa-heart
+                        {
+                            margin-top: 0.5em;
+                        }
+                        &:hover
+                        {
+                            color:$primary-color;
+                            
+                        }
+                    }
+                    .resto-loc {
+                        margin-top: -1em;
+                    }
+                }
+            }
+        }
+
+        
+
     }
+    
+    
 }
