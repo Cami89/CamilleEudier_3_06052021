@@ -2,9 +2,6 @@
 /*header presentation background*/
 /*city & presentation text*/
 /*header city shadow*/
-@font-face {
-  font-family: "Roboto", "sans-serif" "Shrikhand", "cursive";
-}
 section[class=fonct] {
   padding-left: 0.5em;
   margin-top: 2.5em;
@@ -22,8 +19,7 @@ section[class=fonct] .fonct-list .fonct-step {
   box-shadow: -1px 10px 13px -5px #b0b0b0;
 }
 section[class=fonct] .fonct-list .fonct-step:hover {
-  background-color: #9356DC;
-  opacity: 0.2;
+  background: rgba(147, 86, 220, 0.2);
 }
 section[class=fonct] .fonct-list .fonct-step .fas.fonct {
   padding: 1.5em;

@@ -15,8 +15,7 @@ section[class="fonct"] {
             margin: 0em 1em 1em 1em;
             @include mixin-shadow;
             &:hover {
-                background-color: $primary-color;
-                opacity: 0.2;
+                background: rgba(147, 86, 220, 0.2)
             }
 
             .fas.fonct {

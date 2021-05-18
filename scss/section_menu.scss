@@ -11,6 +11,9 @@ section {
         display:flex;
         justify-content: space-between;
         font-family: "Shrikhand" ;
+        .far.fa-heart {
+            margin-top: 0.2em;
+        }
     }
     h2 {
         padding-top: 1em;
@@ -65,4 +68,44 @@ section {
         } 
     }
     
+}
+
+/*Responsive tablettes*/
+@media only screen and (min-width:600px) {
+    h1 {
+        font-size: 2em;
+        justify-content: center!important;
+        .far.fa-heart {
+            padding-left: 1em;
+        }
+    }
+    .menu {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .menu-list {
+            width: 45%;
+        }
+    }
+    .order {
+        padding-top: 2em;
+    }
+    
+}
+
+
+/*Responsive desktop*/
+@media screen and (min-width:1024px) {
+   
+    h1 {
+        font-size: 2em;
+        justify-content: flex-start!important;
+        .far.fa-heart {
+            padding-left: 1em;
+        }
+    }
+    .menu-list {
+        width: 30%!important;
+    }
 }
