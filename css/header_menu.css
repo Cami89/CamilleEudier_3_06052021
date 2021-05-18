@@ -1,0 +1,41 @@
+/*header city backgrond*/
+/*header presentation background*/
+/*city & presentation text*/
+/*header city shadow*/
+@font-face {
+  font-family: "Roboto", "sans-serif" "Shrikhand", "cursive";
+}
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: black;
+  max-width: 100%;
+}
+body ul {
+  list-style: none;
+  margin-left: 0em;
+  padding-left: 0em;
+}
+
+.header-top {
+  margin: 0.8em auto 0.8em auto;
+  display: flex;
+  justify-content: center;
+}
+.header-top .header-logo {
+  width: 10em;
+}
+.header-top .fas.fa-arrow-left {
+  position: relative;
+  right: 5em;
+  color: black;
+}
+
+.resto-pic {
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=header_menu.css.map */

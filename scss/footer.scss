@@ -1,29 +1,48 @@
+@import "variables";
 
 footer {
     background-color: #282B2A;
     color: white;
     padding:0.5em;
-    margin-top: -1em;
+    margin-top: 0em;
     margin-bottom: 1em;
+    padding-left: 1em;
     .footer-logo {
-        width: 30%;
-        padding: 1em 1em 0em 0.5em;
+        font-family: "shrikhand";
+        font-size:1.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0em;
     } 
     li[class="footer-list"] {
         padding: 0.5em;
         display: flex;
         flex-direction: row;
         align-items: center;
-
-        .fas.footer {
+        .footer-link {
+            display:flex;
+            color:white;
+            text-decoration: none;
+            .fas.footer {
             margin-right: 1em;
             width: 1em;
-        }
- 
-        .footer-prop {
+            }
+            .footer-prop {
             margin-bottom: 0em;
             margin-top: 0em;
+            }
+        }  
+    }
+}
 
+/*Responsive tablettes*/
+@media only screen and (min-width:600px) {
+    .footer-menu {
+        display:flex;
+        flex-wrap: wrap;
+        .footer-list {
+            width: 40%!important;
         }
     }
 }
+
+

@@ -6,3 +6,11 @@ $primary-color: #9356DC;
 $tertiary-color: #99E2D0;
 $tertiary-color-dark: #2D8671;
 
+@mixin mixin-shadow {
+    box-shadow: -1px 10px 13px -5px $shadow;
+  }
+
+
+@font-face {
+    font-family: "Roboto", "sans-serif" "Shrikhand", "cursive";
+}

@@ -5,77 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header_menu.css">
+    <link rel="stylesheet" href="css/section_menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/variables.css">
     <script src="https://kit.fontawesome.com/a89bd7c440.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <header>
-    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-    <img src="images/logo/logo_ohmyfood.png" alt="logo" class="header_logo">
-    <img src="images/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens" class="resto-pic">
+    <div class="header-top">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <img src="images/logo/logo_ohmyfood.png" alt="logo" class="header-logo">
+    </div>    
+    <img src="images/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens" class="resto-pic">  
 </header>
 
 <section>
-    <h1>Le délice des sens</h1>  
+    <h1>Le délice des sens <i class="far fa-heart"></i></h1>  
 
-    <h2>Entrées</h2>
-    <ul>
-        <li>Tartare de thon</li>
-        <li>Assaisonné au yuzu</li>
-        <li>25€</li>
+    <h2>ENTRÉES</h2>
+    <div class="ligne">_____</div>
+    <ul class="menu-list">
+        <li class="menu name">Tartare de thon</li>
+        <li class="menu desc">Assaisonné au yuzu</li>
+        <li class="menu price">25€</li>
     </ul> 
-    <ul>  
-        <li>Bouchée de homard croustillant </li>
-        <li>Et sa farandole de petits légumes</li>
-        <li>35€</li>
+    <ul class="menu-list">  
+        <li class="menu name">Bouchée de homard croustillant </li>
+        <li class="menu desc">Et sa farandole de petits légumes</li>
+        <li class="menu price">35€</li>
     </ul>
-    <ul>
-        <li>Velouté de cèpes</li> 
-        <li>Aux truffes</li>
-        <li>20€</li>
+    <ul class="menu-list">
+        <li class="menu name">Velouté de cèpes</li> 
+        <li class="menu desc">Aux truffes</li>
+        <li class="menu price">20€</li>
     </ul>
 
-    <h2>Plats</h2>
-    <ul>
-        <li>Poulet rôti aux herbes de Provence</li> 
-        <li>Et sa crème de truffe</li>
-        <li>40€</li>
+    <h2>PLATS</h2>
+    <div class="ligne">_____</div>
+    <ul class="menu-list">
+        <li class="menu name">Poulet rôti aux herbes de Provence</li> 
+        <li class="menu desc">Et sa crème de truffe</li>
+        <li class="menu price">40€</li>
     </ul>
-    <ul>
-        <li>Langouste rôtie</li> 
-        <li>Et ses légumes de saison</li>
-        <li>35€</li>
+    <ul class="menu-list">
+        <li class="menu name">Langouste rôtie</li> 
+        <li class="menu desc">Et ses légumes de saison</li>
+        <li class="menu price">35€</li>
     </ul>
-    <ul>
-        <li>Côte de boeuf Angus</li>
-        <li>Et sa purée de panais</li>
-        <li>44€</li>
+    <ul class="menu-list">
+        <li class="menu name">Côte de boeuf Angus</li>
+        <li class="menu desc">Et sa purée de panais</li>
+        <li class="menu price">44€</li>
     </ul>
         
-    <h2>Desserts</h2>
-    <ul>
-        <li>Farandole de desserts</li>
-        <li>Du chef</li>
-        <li>18€</li>
+    <h2>DESSERTS</h2>
+    <div class="ligne">_____</div>
+    <ul class="menu-list">
+        <li class="menu name">Farandole de desserts</li>
+        <li class="menu desc">Du chef</li>
+        <li class="menu price">18€</li>
     </ul>
-    <ul>
-        <li>Crème brulée</li> 
-        <li>Revisitée</li>
-        <li>22€</li>
+    <ul class="menu-list">
+        <li class="menu name">Crème brulée</li> 
+        <li class="menu desc">Revisitée</li>
+        <li class="menu price">22€</li>
     </ul>
-    <ul>
-        <li>Tiramisu</li>
-        <li>À la noisette</li>
-        <li>23€</li>
+    <ul class="menu-list">
+        <li class="menu name">Tiramisu</li>
+        <li class="menu desc">À la noisette</li>
+        <li class="menu price">23€</li>
     </ul>
+    <div class="order"> 
+        <a href="#">
+            <button class="order-button">Commander</button>
+        </a>
+    </div> 
 </section>
 
 <footer>
-    <img src="images/logo/logo_ohmyfood.png" alt="logo" class="footer_logo">
+    <p class="footer-logo">Ohmyfood</p>
     <ul>
-        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>  
+        <li class="footer-list">
+            <a href="#"class="footer-link"><i class="fas fa-utensils footer"></i><p class="footer-prop">Proposer un restaurant</p></a>
+        </li>
+        <li class="footer-list">
+            <a href="#"class="footer-link"><i class="fas fa-hands-helping footer"></i><p class="footer-prop">Devenir partenaire</p></a>
+        </li>
+        <li class="footer-list">
+            <a href="#" class="footer-link">Mentions légales</a>
+        </li>
+        <li class="footer-list">
+            <a href="#" class="footer-link">Contact</a>
+        </li>
     </ul>
 </footer>

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/header.scss:./css/header.css ./scss/footer.scss:./css/footer.css ./scss/section.scss:./css/section.css" 
+    "sass": "sass --watch ./scss/header.scss:./css/header.css ./scss/section.scss:./css/section.css ./scss/footer.scss:./css/footer.css  ./scss/section_menu.scss:./css/section_menu.css ./scss/header_menu.scss:./css/header_menu.css ./scss/variables.scss:./css/variables.css"
   },
   "author": "",
   "license": "ISC",

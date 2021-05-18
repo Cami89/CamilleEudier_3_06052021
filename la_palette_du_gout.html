@@ -5,77 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header_menu.css">
+    <link rel="stylesheet" href="css/section_menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/variables.css">
     <script src="https://kit.fontawesome.com/a89bd7c440.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <header> 
-    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-    <img src="images/logo/logo_ohmyfood.png" alt="logo" class="header_logo">
+        <div class="header-top">   
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <img src="images/logo/logo_ohmyfood.png" alt="logo" class="header-logo">
+    </div>
     <img src="images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût" class="resto-pic">
 </header>
 
 <section>
-    <h1>La palette du goût</h1>
+    <h1>La palette du goût <i class="far fa-heart"></i></h1>
 
-    <h2>Entrées</h2>
-    <ul>  
-        <li>Fricassée d'escargot</li>
-        <li>Au piment d'Espelette</li> 
-        <li>25€</li>
+    <h2>ENTRÉES</h2>
+    <div class="ligne">_____</div>
+    <ul class="menu-list">  
+        <li class="menu name">Fricassée d'escargot</li>
+        <li class="menu desc">Au piment d'Espelette</li> 
+        <li class="menu price">25€</li>
     </ul>
-    <ul>
-        <li>Foie gras de canard mi-cuit</li>
-        <li>Et ses copeaux de truffe noire</li>
-        <li>35€</li>
+    <ul class="menu-list">
+        <li class="menu name">Foie gras de canard mi-cuit</li>
+        <li class="menu desc">Et ses copeaux de truffe noire</li>
+        <li class="menu price">35€</li>
     </ul>
-    <ul>
-        <li>Oeuf au plat</li>
-        <li>Assaisonné à la truffe sur lit de caviar</li>
-        <li>20€</li>
+    <ul class="menu-list">
+        <li class="menu name">Oeuf au plat</li>
+        <li class="menu desc">Assaisonné à la truffe sur lit de caviar</li>
+        <li class="menu price">20€</li>
     </ul>
 
-    <h2>Plats</h2>
-    <ul>
-        <li>Filet de boeuf aux herbes</li>
-        <li>Accompagné de sa ribambelle de légumes</li>
-        <li>40€</li>
+    <h2>PLATS</h2>
+    <div class="ligne">_____</div>
+    <ul class="menu-list">
+        <li class="menu name">Filet de boeuf aux herbes</li>
+        <li class="menu desc">Accompagné de sa ribambelle de légumes</li>
+        <li class="menu price">40€</li>
     </ul>
-    <ul>
-        <li>Parmentier de queue de boeuf</li>
-        <li>À la truffe noire sur sa purée de panais</li>
-        <li>35€</li>
+    <ul class="menu-list">
+        <li class="menu name">Parmentier de queue de boeuf</li>
+        <li class="menu desc">À la truffe noire sur sa purée de panais</li>
+        <li class="menu price">35€</li>
     </ul>
-    <ul>
-        <li>Filet de turbot</li>
-        <li>Aux agrumes</li>
-        <li>44€</li>
-    </ul>  
+    <ul class="menu-list">
+        <li class="menu name">Filet de turbot</li>
+        <li class="menu desc">Aux agrumes</li>
+        <li class="menu price">44€</li>
+    </ul class="menu-list">  
 
-    <h2>Desserts</h2>
-    <ul>
-        <li>Paris-Brest
-        <li>Revisité
-        <li>18€
+    <h2>DESSERTS</h2>
+    <div class="ligne">_____</div>
+    <ul class="menu-list">
+        <li class="menu name">Paris-Brest</li>
+        <li class="menu desc">Revisité</li>
+        <li class="menu price">18€</li>
     </ul>
-    <ul>
-        <li>Macaron au chocolat d'exception</li> 
-        <li>Et glace à la vanille de Madagascar</li>
-        <li>22€</li>
+    <ul class="menu-list">
+        <li class="menu name">Macaron au chocolat d'exception</li> 
+        <li class="menu desc">Et glace à la vanille de Madagascar</li>
+        <li class="menu price">22€</li>
     </ul>
-    <ul>
-        <li>Mousse au chocolat</li> 
-        <li>Au piment d'Espelette et à la truffe noire</li>
-        <li>23€</li>  
-    </ul>   
+    <ul class="menu-list">
+        <li class="menu name">Mousse au chocolat</li> 
+        <li class="menu desc">Au piment d'Espelette et à la truffe noire</li>
+        <li class="menu price">23€</li>  
+    </ul> 
+    <div class="order"> 
+        <a href="#">
+            <button class="order-button">Commander</button>
+        </a>
+    </div> 
 </section>
 
 <footer>
-    <img src="images/logo/logo_ohmyfood.png" alt="logo" class="footer_logo">
+    <p class="footer-logo">Ohmyfood</p>
     <ul>
-        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>  
+        <li class="footer-list">
+            <a href="#" class="footer-link"><i class="fas fa-utensils footer"></i><p class="footer-prop">Proposer un restaurant</p></a>
+        </li>
+        <li class="footer-list">
+            <a href="#" class="footer-link"><i class="fas fa-hands-helping footer"></i><p class="footer-prop">Devenir partenaire</p></a>
+        </li>
+        <li class="footer-list">
+            <a href="#" class="footer-link">Mentions légales</a>
+        </li>
+        <li class="footer-list">
+            <a href="#" class="footer-link">Contact</a>
+        </li>
     </ul>
 </footer>

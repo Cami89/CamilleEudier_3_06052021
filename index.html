@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/variables.css">
     <script src="https://kit.fontawesome.com/a89bd7c440.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,8 +22,8 @@
         <p class="header-city"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
         <div class="header-presentation">
             <h1>Réservez le menu qui vous convient</h1>
-            <p class="header-presentation__text">Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
-            <button class="header-button">Explorer nos restaurants</button>
+            <p class="header-presentation__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="header-button"><a href="#header-resto-link" class="header-resto-link">Explorer nos restaurants</a></button>
         </div>
     </header>
 
@@ -46,7 +49,7 @@
     </section>
 
     <section class="resto">
-        <h2 class="resto-title">Restaurants</h2>
+        <h2 class="resto-title" id="header-resto-link">Restaurants</h2>
         <ul class="resto-list">
             <li class="resto-prev">
                 <a class="resto-link" href="la_palette_du_gout.html">
@@ -90,12 +93,20 @@
     </section>
 
     <footer>
-        <img src="images/logo/logo_ohmyfood.png" alt="logo" class="footer-logo">
-        <ul>
-            <li class="footer-list"><i class="fas fa-utensils footer"></i><p class="footer-prop">Proposer un restaurant</p></li>
-            <li class="footer-list"><i class="fas fa-hands-helping footer"></i><p class="footer-prop">Devenir partenaire</p></li>
-            <li class="footer-list">Mentions légales</li>
-            <li class="footer-list">Contact</li>
+        <p class="footer-logo">Ohmyfood</p>
+        <ul class=footer-menu>
+            <li class="footer-list">
+                <a href="#" class="footer-link"><i class="fas fa-utensils footer"></i><p class="footer-prop">Proposer un restaurant</p></a>
+            </li>
+            <li class="footer-list" class="footer-link">
+                <a href="#" class="footer-link"><i class="fas fa-hands-helping footer"></i><p class="footer-prop">Devenir partenaire</p></a>
+            </li>
+            <li class="footer-list">
+                <a href="#" class="footer-link">Mentions légales</a>
+            </li>
+            <li class="footer-list">
+                <a href="#" class="footer-link">Contact</a>
+            </li>
         </ul>
     </footer>
 
