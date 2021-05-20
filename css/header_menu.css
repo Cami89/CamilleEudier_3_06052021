@@ -1,7 +1,7 @@
 /*header city backgrond*/
 /*header presentation background*/
 /*city & presentation text*/
-/*header city shadow*/
+/*box shadow grey*/
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: black;
@@ -34,8 +34,5 @@ body ul {
   position: relative;
   z-index: 1;
 }
-
-/*Responsive tablettes*/
-/*Responsive desktop*/
 
 /*# sourceMappingURL=header_menu.css.map */

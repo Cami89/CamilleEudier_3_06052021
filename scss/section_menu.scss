@@ -51,22 +51,20 @@ section {
             font-size: 0.8em;
         }
     }
+    
     .order {
+        width: 100%;
         display: flex;
         justify-content: center;
-        padding-bottom: 2em;
 
         .order-button {
-        border-radius: 2em;
-        padding: 0.8em 3em 0.8em 3em;
+        margin-bottom: 2em;
+        padding: 1em 3em 1em 3em;
         margin-top: 1em;
-        background-color: $primary-color;
-        color: white;
-        border: none;
-        @include mixin-shadow;
-        box-shadow: inset 5px 16px 50px 6px rgba(255,121,218,0.71);
-        } 
-    }
+        @include mixin-button;
+        }
+    }     
+    
     
 }
 
@@ -90,6 +88,7 @@ section {
     }
     .order {
         padding-top: 2em;
+
     }
     
 }

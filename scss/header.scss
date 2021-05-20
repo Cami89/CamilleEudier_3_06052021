@@ -43,28 +43,25 @@ header {
         background-color: $lightgrey;
         padding: 1em 1em 3em 1em;
         margin-top: -1em;
+        
 
         .header-presentation__text {
             color: $darkgrey;
             font-size: 1.2em;
+            margin-bottom: 2em;
             }
     }
     .header-button {
-        font-size: 1em;
-        border-radius: 2em;
         padding: 1em;
-        margin-top: 1em;
-        background-color: $primary-color;
-        border: none;
-        @include mixin-shadow;
-        box-shadow: inset 5px 16px 50px 6px rgba(255,121,218,0.71);
+        margin-top: 2em;
+        @include mixin-button ;
+        
+    }   
 
-        .header-resto-link {
-            color: white;
-            text-decoration: none;
-        }
-    } 
-}
+    
+    
+    
+}   
 
 
 

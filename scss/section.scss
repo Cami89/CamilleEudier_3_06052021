@@ -15,9 +15,11 @@ section[class="fonct"] {
             margin: 0em 1em 1em 1em;
             @include mixin-shadow;
             &:hover {
-                background: rgba(147, 86, 220, 0.2)
+                @include mixin-primary-hover;
+                & .fas.fonct {
+                    color:$primary-color
+                }
             }
-
             .fas.fonct {
                 padding: 1.5em;
                 color: $darkgrey;
@@ -95,13 +97,16 @@ section[class="resto"] {
                     .resto-name {
                         display: flex;
                         justify-content: space-between;
+
                         .far.fa-heart
                         {
                             margin-top: 0.5em;
-                        }
-                        &:hover {
-                            color:$primary-color;   
-                        }
+                            transition: background-color 250ms;
+                            
+                            &:hover {
+                            color:$primary-color;
+                            }
+                        }   
                     }
                     .resto-loc {
                         margin-top: -1em;
