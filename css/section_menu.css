@@ -14,7 +14,7 @@ section h1 {
   display: flex;
   justify-content: space-between;
   font-family: "Shrikhand";
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top: 0.5em;
 }
 section h1 .far.fa-heart {
@@ -39,12 +39,16 @@ section .menu-list .menu.choices {
   box-shadow: -1px 10px 13px -5px #b0b0b0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: stretch;
   height: 4em;
   margin-bottom: 1em;
+  overflow: hidden;
+}
+section .menu-list .menu.choices :hover + .menu.right {
+  transform: translate(-4.5em, 0em);
 }
 section .menu-list .menu.choices .menu.name {
-  max-width: 85%;
+  width: 95%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -59,12 +63,35 @@ section .menu-list .menu.choices .menu.name .menu.desc {
   font-size: 0.9em;
   color: #535353;
 }
-section .menu-list .menu.choices .menu.price {
+section .menu-list .menu.choices .menu.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: transform 350ms ease-in;
+}
+section .menu-list .menu.choices .menu.right .menu.price {
   font-weight: bold;
   font-size: 0.8em;
   display: flex;
   align-items: flex-end;
-  margin: 0em 0.5em 0.74em 0.5em;
+  margin: 1.05em 0em 1em 0em;
+  padding: 1em 1em 0.5em 0.8em;
+  background-color: white;
+  height: 2em;
+}
+section .menu-list .menu.choices .menu.right .menu.check {
+  display: flex;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0em 1em 1em 0em;
+  padding: 1.5em;
+  margin: -0.2em -5em -0.5em 0em;
+}
+section .menu-list .menu.choices .menu.right .menu.check .fas.fa-check {
+  border-radius: 2em;
+  background-color: white;
+  color: #99E2D0;
+  padding: 0.2em;
 }
 section .order {
   width: 100%;
