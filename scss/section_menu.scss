@@ -11,12 +11,16 @@ section {
         display:flex;
         justify-content: space-between;
         font-family: "Shrikhand" ;
+        font-size: 2em;
+        margin-top: 0.5em;
         .far.fa-heart {
             margin-top: 0.2em;
         }
     }
     h2 {
         padding-top: 1em;
+        font-size: 1.2em;
+        font-weight: normal;
     }
     .ligne {
         font-weight: bold;
@@ -27,28 +31,42 @@ section {
     }
     .menu-list
     {
-        background-color: white;
-        border-radius: 1em;
-        padding: 0.2em 0.5em 0.5em 1em;
-        @include mixin-shadow;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-around;
-        height: 4.5em;
-        .menu.name {
-            font-weight: bold;
-            width: 100%;
-            margin-bottom: -1em;
-        }
-        .menu.desc {
-            font-size: 0.8em;
-            color: $darkgrey;
-        }
-        .menu.price {
-            font-weight: bold;
-            width: 15%;
-            font-size: 0.8em;
+        .menu.choices {
+            background-color: white;
+            border-radius: 1em;
+            padding: 0.2em 0.5em 0.5em 0.8em;
+            @include mixin-shadow;
+            display:flex;
+            flex-direction: row; 
+            justify-content: space-between;
+            height: 4em;
+            margin-bottom: 1em;
+
+            .menu.name {
+                max-width: 85%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+                h3 {
+                    font-weight: bold;
+                    margin-top: 0.6em;
+                    font-size: 1.1em;
+                }
+                .menu.desc {
+                    margin-top: -1em;
+                    font-size: 0.9em;
+                    color: $darkgrey;
+                }
+            }
+ 
+            .menu.price {
+                font-weight: bold;
+                font-size: 0.8em;
+                display: flex;
+                align-items: flex-end;
+                margin: 0em 0.5em 0.74em 0.5em;
+            }
         }
     }
     
@@ -70,41 +88,48 @@ section {
 
 /*Responsive tablettes*/
 @media only screen and (min-width:600px) {
-    h1 {
-        font-size: 2em;
-        justify-content: center!important;
-        .far.fa-heart {
-            padding-left: 1em;
-        }
-    }
-    .menu {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
 
-        .menu-list {
-            width: 45%;
+    section {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        h2 {
+            text-align: center;
         }
-    }
-    .order {
-        padding-top: 2em;
-
-    }
-    
+        .ligne {
+            text-align:center;
+        }
+        .order {
+                padding-top: 2em;
+        }    
+    }    
 }
 
 
 /*Responsive desktop*/
 @media screen and (min-width:1024px) {
-   
+
+
     h1 {
-        font-size: 2em;
-        justify-content: flex-start!important;
+    font-size: 2em;
+    justify-content: flex-start!important;
         .far.fa-heart {
-            padding-left: 1em;
+        padding-left: 1em;
         }
     }
-    .menu-list {
-        width: 30%!important;
+    .menu-all {
+        display: flex;
+        justify-content: space-around;
+
+        .menu-steps {
+            width: 100%;
+
+            .menu-list {
+            width: 95%!important;
+            margin-left: 0.5em;
+             }
+        }
     }
 }
+   
+    

@@ -11,9 +11,13 @@ $primary-hover : -1px 10px 13px -5px $shadow;
     box-shadow: -1px 10px 13px -5px $shadow;
   }
 
+@mixin mixin-primary-hover {
+    background: rgba(147, 86, 220, 0.2)
+}
+
 
 @mixin mixin-button {
-    box-shadow: $primary-hover;
+    box-shadow: inset 5px 16px 50px 6px rgba(250, 90, 205, 0.71), 0px 13px 13px 0px $shadow ;
     font-size: 1em;
     border-radius: 2em;
     background-color: $primary-color;
@@ -21,7 +25,6 @@ $primary-hover : -1px 10px 13px -5px $shadow;
     text-decoration: none;
     color: white;
     &:hover {
-        box-shadow: inset 5px 16px 50px 6px rgba(255,121,218,0.71), 0px 13px 13px 0px $darkgrey ;
-
+        box-shadow: inset 5px 16px 50px 6px rgba(221, 161, 204, 0.71), 0px 13px 25px 0px $darkgrey ;
         }
 }

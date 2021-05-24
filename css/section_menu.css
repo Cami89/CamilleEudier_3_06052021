@@ -14,12 +14,16 @@ section h1 {
   display: flex;
   justify-content: space-between;
   font-family: "Shrikhand";
+  font-size: 2em;
+  margin-top: 0.5em;
 }
 section h1 .far.fa-heart {
   margin-top: 0.2em;
 }
 section h2 {
   padding-top: 1em;
+  font-size: 1.2em;
+  font-weight: normal;
 }
 section .ligne {
   font-weight: bold;
@@ -28,30 +32,39 @@ section .ligne {
   margin-top: -1.5em;
   margin-bottom: 1em;
 }
-section .menu-list {
+section .menu-list .menu.choices {
   background-color: white;
   border-radius: 1em;
-  padding: 0.2em 0.5em 0.5em 1em;
+  padding: 0.2em 0.5em 0.5em 0.8em;
   box-shadow: -1px 10px 13px -5px #b0b0b0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
-  align-content: space-around;
-  height: 4.5em;
+  height: 4em;
+  margin-bottom: 1em;
 }
-section .menu-list .menu.name {
+section .menu-list .menu.choices .menu.name {
+  max-width: 85%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+section .menu-list .menu.choices .menu.name h3 {
   font-weight: bold;
-  width: 100%;
-  margin-bottom: -1em;
+  margin-top: 0.6em;
+  font-size: 1.1em;
 }
-section .menu-list .menu.desc {
-  font-size: 0.8em;
+section .menu-list .menu.choices .menu.name .menu.desc {
+  margin-top: -1em;
+  font-size: 0.9em;
   color: #535353;
 }
-section .menu-list .menu.price {
+section .menu-list .menu.choices .menu.price {
   font-weight: bold;
-  width: 15%;
   font-size: 0.8em;
+  display: flex;
+  align-items: flex-end;
+  margin: 0em 0.5em 0.74em 0.5em;
 }
 section .order {
   width: 100%;
@@ -62,7 +75,7 @@ section .order .order-button {
   margin-bottom: 2em;
   padding: 1em 3em 1em 3em;
   margin-top: 1em;
-  box-shadow: -1px 10px 13px -5px #b0b0b0;
+  box-shadow: inset 5px 16px 50px 6px rgba(250, 90, 205, 0.71), 0px 13px 13px 0px #b0b0b0;
   font-size: 1em;
   border-radius: 2em;
   background-color: #9356DC;
@@ -71,29 +84,23 @@ section .order .order-button {
   color: white;
 }
 section .order .order-button:hover {
-  box-shadow: inset 5px 16px 50px 6px rgba(255, 121, 218, 0.71), 0px 13px 13px 0px #535353;
+  box-shadow: inset 5px 16px 50px 6px rgba(221, 161, 204, 0.71), 0px 13px 25px 0px #535353;
 }
 
 /*Responsive tablettes*/
 @media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 2em;
-    justify-content: center !important;
+  section {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  h1 .far.fa-heart {
-    padding-left: 1em;
+  section h2 {
+    text-align: center;
   }
-
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  section .ligne {
+    text-align: center;
   }
-  .menu .menu-list {
-    width: 45%;
-  }
-
-  .order {
+  section .order {
     padding-top: 2em;
   }
 }
@@ -107,8 +114,16 @@ section .order .order-button:hover {
     padding-left: 1em;
   }
 
-  .menu-list {
-    width: 30% !important;
+  .menu-all {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-all .menu-steps {
+    width: 100%;
+  }
+  .menu-all .menu-steps .menu-list {
+    width: 95% !important;
+    margin-left: 0.5em;
   }
 }
 
