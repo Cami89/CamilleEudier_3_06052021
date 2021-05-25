@@ -67,6 +67,8 @@ section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-lin
   text-decoration: none;
   color: black;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] img[class=resto-pic] {
   width: 100%;

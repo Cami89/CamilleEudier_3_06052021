@@ -111,7 +111,7 @@ section .order .order-button {
   color: white;
 }
 section .order .order-button:hover {
-  box-shadow: inset 5px 16px 50px 6px rgba(221, 161, 204, 0.71), 0px 13px 25px 0px #535353;
+  box-shadow: inset 5px 16px 50px 6px rgba(253, 167, 229, 0.71), 0px 13px 25px 0px #535353;
 }
 
 /*Responsive tablettes*/

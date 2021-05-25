@@ -3,6 +3,7 @@ $lightgrey : #f5f5f5; /*header presentation background*/
 $darkgrey : #535353; /*city & presentation text*/
 $shadow: #b0b0b0; /*box shadow grey*/
 $primary-color: #9356DC;
+$secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $tertiary-color-dark: #2D8671;
 $primary-hover : -1px 10px 13px -5px $shadow;
@@ -25,6 +26,6 @@ $primary-hover : -1px 10px 13px -5px $shadow;
     text-decoration: none;
     color: white;
     &:hover {
-        box-shadow: inset 5px 16px 50px 6px rgba(221, 161, 204, 0.71), 0px 13px 25px 0px $darkgrey ;
+        box-shadow: inset 5px 16px 50px 6px rgba(253, 167, 229, 0.71), 0px 13px 25px 0px $darkgrey ;
         }
 }
