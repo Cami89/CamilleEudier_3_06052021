@@ -2,6 +2,86 @@
 /*header presentation background*/
 /*city & presentation text*/
 /*box shadow grey*/
+@keyframes resto-heart-like {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: rgba(147, 86, 220, 0.6);
+    text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.8);
+  }
+}
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: black;
+  max-width: 100%;
+  min-height: 100%;
+  position: relative;
+  /*pour que le background du loader soit sur toute la page*/
+}
+body ul {
+  list-style: none;
+  margin-left: 0em;
+  padding-left: 0em;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  animation-name: loading-background;
+  animation-duration: 2.5s;
+  z-index: 1000;
+}
+@keyframes loading-background {
+  0% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  99% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.loading .loading-object {
+  margin: auto;
+  position: absolute;
+  top: 20em;
+  left: 0em;
+  right: 0em;
+  width: 5em;
+  border-radius: 3em;
+  height: 5em;
+  pointer-events: none;
+  transform: rotate(360deg);
+  animation-name: loading-object;
+  animation-duration: 2s;
+}
+@keyframes loading-object {
+  0% {
+    transform: rotate(0deg);
+    border: solid 0.5em;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    border-right-color: transparent;
+    border-left-color: #99E2D0;
+  }
+  99% {
+    transform: rotate(1080deg);
+    border: solid 0.5em;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    border-right-color: transparent;
+    border-left-color: #99E2D0;
+  }
+  100% {
+    transform: rotate(1440deg);
+    border-color: transparent;
+  }
+}
+
 footer {
   background-color: #282B2A;
   color: white;

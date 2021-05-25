@@ -1,5 +1,7 @@
 @import "variables";
 
+
+
 section {
     background-color: $lightgrey;
     margin-top: -2em;
@@ -13,9 +15,32 @@ section {
         font-family: "Shrikhand" ;
         font-size: 1.8em;
         margin-top: 0.5em;
-        .far.fa-heart {
+        .menu-heart {
+            display:flex;
+            flex-direction: column;
+            margin-left: 3em;
+
+            .far.fa-heart {
             margin-top: 0.2em;
+            transition: background-color 250ms;
+            position: relative;
+            z-index: 3; 
+            } 
+            .fas.fa-heart {
+                position: relative;
+                bottom: 1em;
+                color:transparent;
+                z-index: 4;
+                &:hover {  
+                    animation-name: resto-heart-like;
+                    animation-duration: 500ms;
+                    animation-fill-mode: forwards;
+                }
+
+            }
+             
         }
+        
     }
     h2 {
         padding-top: 1em;
@@ -142,10 +167,11 @@ section {
     h1 {
     font-size: 2em;
     justify-content: flex-start!important;
-        .far.fa-heart {
+        .far.fa-heart .fas.fa-heart {
         padding-left: 1em;
         }
     }
+
     .menu-all {
         display: flex;
         justify-content: space-around;

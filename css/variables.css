@@ -2,5 +2,14 @@
 /*header presentation background*/
 /*city & presentation text*/
 /*box shadow grey*/
+@keyframes resto-heart-like {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: rgba(147, 86, 220, 0.6);
+    text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.8);
+  }
+}
 
 /*# sourceMappingURL=variables.css.map */

@@ -129,17 +129,6 @@ section[class="resto"] {
                             }
                         }
 
-                        @keyframes resto-heart-like {
-                            0% {
-                                color: transparent;
-                            }
-
-                            100% {
-                                color: rgba(147, 86, 220, 0.8);
-                                text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.7);
-                            }
-                        }
-
                     }
                     .resto-loc {
                         margin-top: -1em;
@@ -185,6 +174,7 @@ section[class="resto"] {
         width: 85%;
         margin: auto;
         border-radius: 2em 2em 0em 0em;
+
         .resto-list {
             flex-direction: row !important;
             flex-wrap: wrap;
