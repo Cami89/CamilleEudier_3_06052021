@@ -6,6 +6,9 @@ section[class=fonct] {
   padding-left: 0.5em;
   margin-top: 2.5em;
 }
+section[class=fonct] h2 {
+  margin-left: 0.5em;
+}
 section[class=fonct] .fonct-list {
   padding-left: 0em;
 }
@@ -48,6 +51,7 @@ section[class=resto] {
 section[class=resto] h2[class=resto-title] {
   padding: 0.5em;
   margin-bottom: 0em;
+  margin-left: 0.5em;
 }
 section[class=resto] ul[class=resto-list] {
   display: flex;
@@ -97,13 +101,37 @@ section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-lin
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-name {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0em;
 }
-section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-name .far.fa-heart {
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-hearts {
+  display: flex;
+  flex-direction: column;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-hearts .far.fa-heart {
   margin-top: 0.5em;
   transition: background-color 250ms;
+  position: relative;
+  z-index: 5;
 }
-section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-name .far.fa-heart:hover {
-  color: #9356DC;
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-hearts .fas.fa-heart {
+  position: relative;
+  bottom: 1em;
+  color: transparent;
+  z-index: 6;
+}
+section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-hearts .fas.fa-heart:hover {
+  animation-name: resto-heart-like;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes resto-heart-like {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: rgba(147, 86, 220, 0.8);
+    text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.7);
+  }
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-loc {
   margin-top: -1em;
@@ -139,15 +167,21 @@ section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-lin
     width: 33% !important;
   }
 
-  .resto-list {
+  .resto {
+    width: 85%;
+    margin: auto;
+    border-radius: 2em 2em 0em 0em;
+  }
+  .resto .resto-list {
     flex-direction: row !important;
     flex-wrap: wrap;
   }
-  .resto-list .resto-prev {
-    width: 23% !important;
-  }
-  .resto-list .resto-prev .resto-pres {
+  .resto .resto-list .resto-prev .resto-pres {
     height: 100%;
+  }
+  .resto .resto-list .resto-prev .resto-new {
+    margin-left: 75% !important;
+    font-size: 1.2em !important;
   }
 }
 

@@ -3,6 +3,9 @@
 section[class="fonct"] {
     padding-left: 0.5em;
     margin-top: 2.5em;
+    h2 {
+        margin-left:0.5em;
+    }
     .fonct-list {
         padding-left: 0em;
         
@@ -50,6 +53,7 @@ section[class="resto"] {
     h2[class="resto-title"] {
         padding: 0.5em;
         margin-bottom: 0em;
+        margin-left:0.5em;
     }
     ul[class="resto-list"] {
         display: flex;
@@ -99,16 +103,43 @@ section[class="resto"] {
                     .resto-name {
                         display: flex;
                         justify-content: space-between;
+                        margin-bottom: 0em;
+                    }
 
-                        .far.fa-heart
-                        {
+                    .resto-hearts {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .far.fa-heart {
                             margin-top: 0.5em;
                             transition: background-color 250ms;
-                            
-                            &:hover {
-                            color:$primary-color;
-                            }
+                            position: relative;
+                            z-index: 5;   
                         }   
+                        .fas.fa-heart {
+                            position: relative;
+                            bottom: 1em;
+                            color:transparent;
+                            z-index: 6;
+                            &:hover {
+                                    
+                                animation-name: resto-heart-like;
+                                animation-duration: 500ms;
+                                animation-fill-mode: forwards;
+                            }
+                        }
+
+                        @keyframes resto-heart-like {
+                            0% {
+                                color: transparent;
+                            }
+
+                            100% {
+                                color: rgba(147, 86, 220, 0.8);
+                                text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.7);
+                            }
+                        }
+
                     }
                     .resto-loc {
                         margin-top: -1em;
@@ -118,6 +149,7 @@ section[class="resto"] {
         }     
     }   
 }
+
 
 /*Responsive tablettes*/
 @media only screen and (min-width:600px) {
@@ -149,15 +181,24 @@ section[class="resto"] {
             width: 33% !important;
         }
     }
-    .resto-list {
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        .resto-prev {
-            width: 23% !important;
-            .resto-pres {
+    .resto {
+        width: 85%;
+        margin: auto;
+        border-radius: 2em 2em 0em 0em;
+        .resto-list {
+            flex-direction: row !important;
+            flex-wrap: wrap;
+        
+            .resto-prev {
+                
+                .resto-pres {
                 height: 100%;
-            }
+                }
+                .resto-new {
+                    margin-left: 75%!important;
+                    font-size: 1.2em!important;
+                }
+            }    
         }
-    }  
-
+    }   
 }

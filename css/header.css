@@ -23,7 +23,7 @@ body ul {
   pointer-events: none;
   animation-name: loading-background;
   animation-duration: 4s;
-  z-index: 3;
+  z-index: 1000;
 }
 @keyframes loading-background {
   0% {
