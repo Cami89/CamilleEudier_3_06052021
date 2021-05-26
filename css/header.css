@@ -11,6 +11,73 @@
     text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.8);
   }
 }
+@keyframes menu-choices-arrival {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1em;
+    transform: scale(1, 1);
+  }
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  animation-name: loading-background;
+  animation-duration: 2.5s;
+  z-index: 1000;
+}
+@keyframes loading-background {
+  0% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  99% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.loading .loading-object {
+  margin: auto;
+  position: absolute;
+  top: 20em;
+  left: 0em;
+  right: 0em;
+  width: 5em;
+  border-radius: 3em;
+  height: 5em;
+  pointer-events: none;
+  transform: rotate(360deg);
+  animation-name: loading-object;
+  animation-duration: 2s;
+}
+@keyframes loading-object {
+  0% {
+    transform: rotate(0deg);
+    border: solid 0.5em;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    border-right-color: transparent;
+    border-left-color: #99E2D0;
+  }
+  99% {
+    transform: rotate(1080deg);
+    border: solid 0.5em;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    border-right-color: transparent;
+    border-left-color: #99E2D0;
+  }
+  100% {
+    transform: rotate(1440deg);
+    border-color: transparent;
+  }
+}
+
 header {
   text-align: center;
   max-width: 100%;
@@ -49,7 +116,7 @@ header .header-presentation .header-presentation__text {
 header .header-button {
   padding: 1em;
   margin-top: 2em;
-  box-shadow: inset 5px 16px 50px 6px rgba(250, 90, 205, 0.71), 0px 13px 13px 0px #b0b0b0;
+  box-shadow: inset 5px 16px 50px 6px rgba(250, 90, 178, 0.71), 0px 13px 13px 0px #b0b0b0;
   font-size: 1em;
   border-radius: 2em;
   background-color: #9356DC;
@@ -58,7 +125,7 @@ header .header-button {
   color: white;
 }
 header .header-button:hover {
-  box-shadow: inset 5px 16px 50px 6px rgba(250, 148, 221, 0.71), 0px 13px 25px 0px #535353;
+  box-shadow: inset 5px 16px 50px 6px rgba(250, 148, 204, 0.71), 0px 13px 25px 0px #535353;
 }
 
 /*# sourceMappingURL=header.css.map */

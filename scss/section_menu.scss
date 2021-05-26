@@ -9,22 +9,26 @@ section {
     border-radius: 2em 2em 0em 0em;
     position:relative;
     z-index: 2;
-    h1 {
+    .resto-name {
         display:flex;
         justify-content: space-between;
-        font-family: "Shrikhand" ;
-        font-size: 1.8em;
-        margin-top: 0.5em;
+        align-items: baseline;
+        margin-top: -1em;
+        margin-bottom: -1em;
+        h1 {
+            font-family: "Shrikhand" ;
+            font-size: 1.8em;
+        }
         .menu-heart {
             display:flex;
             flex-direction: column;
-            margin-left: 3em;
+            font-size: 1.5em;
 
             .far.fa-heart {
-            margin-top: 0.2em;
-            transition: background-color 250ms;
-            position: relative;
-            z-index: 3; 
+                margin-top: 0.2em;
+                transition: background-color 250ms;
+                position: relative;
+                z-index: 3; 
             } 
             .fas.fa-heart {
                 position: relative;
@@ -67,9 +71,16 @@ section {
             height: 4em;
             margin-bottom: 1em;
             overflow: hidden;
+            animation: menu-choices-arrival;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            
             & :hover + .menu.right {
                 transform: translate(-4.5em, 0em)
-            } 
+            }  
+
+
+
 
             .menu.name {
                 width: 95%;
@@ -147,6 +158,9 @@ section {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
+        .menu-heart {
+            margin-left: 2em;
+        }
         h2 {
             text-align: center;
         }
@@ -164,11 +178,10 @@ section {
 @media screen and (min-width:1024px) {
 
 
-    h1 {
-    font-size: 2em;
-    justify-content: flex-start!important;
+    .resto-name {
+        justify-content: flex-start!important;
         .far.fa-heart .fas.fa-heart {
-        padding-left: 1em;
+            padding-left: 1em;
         }
     }
 

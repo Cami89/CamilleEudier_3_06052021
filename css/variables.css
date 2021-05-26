@@ -11,5 +11,15 @@
     text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.8);
   }
 }
+@keyframes menu-choices-arrival {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1em;
+    transform: scale(1, 1);
+  }
+}
 
 /*# sourceMappingURL=variables.css.map */

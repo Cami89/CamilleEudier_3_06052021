@@ -11,6 +11,16 @@
     text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.8);
   }
 }
+@keyframes menu-choices-arrival {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1em;
+    transform: scale(1, 1);
+  }
+}
 section[class=fonct] {
   padding-left: 0.5em;
   margin-top: 2.5em;
@@ -115,6 +125,7 @@ section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-lin
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-hearts {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-hearts .far.fa-heart {
   margin-top: 0.5em;
@@ -134,7 +145,7 @@ section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-lin
   animation-fill-mode: forwards;
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-loc {
-  margin-top: -1em;
+  margin-top: -0.5em;
 }
 
 /*Responsive tablettes*/

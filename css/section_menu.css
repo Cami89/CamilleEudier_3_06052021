@@ -11,6 +11,16 @@
     text-shadow: 0px 0px 0px rgba(248, 56, 194, 0.8);
   }
 }
+@keyframes menu-choices-arrival {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1em;
+    transform: scale(1, 1);
+  }
+}
 section {
   background-color: #f5f5f5;
   margin-top: -2em;
@@ -19,31 +29,35 @@ section {
   position: relative;
   z-index: 2;
 }
-section h1 {
+section .resto-name {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+section .resto-name h1 {
   font-family: "Shrikhand";
   font-size: 1.8em;
-  margin-top: 0.5em;
 }
-section h1 .menu-heart {
+section .resto-name .menu-heart {
   display: flex;
   flex-direction: column;
-  margin-left: 3em;
+  font-size: 1.5em;
 }
-section h1 .menu-heart .far.fa-heart {
+section .resto-name .menu-heart .far.fa-heart {
   margin-top: 0.2em;
   transition: background-color 250ms;
   position: relative;
   z-index: 3;
 }
-section h1 .menu-heart .fas.fa-heart {
+section .resto-name .menu-heart .fas.fa-heart {
   position: relative;
   bottom: 1em;
   color: transparent;
   z-index: 4;
 }
-section h1 .menu-heart .fas.fa-heart:hover {
+section .resto-name .menu-heart .fas.fa-heart:hover {
   animation-name: resto-heart-like;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -71,6 +85,9 @@ section .menu-list .menu.choices {
   height: 4em;
   margin-bottom: 1em;
   overflow: hidden;
+  animation: menu-choices-arrival;
+  animation-duration: 2s;
+  animation-delay: 0s;
 }
 section .menu-list .menu.choices :hover + .menu.right {
   transform: translate(-4.5em, 0em);
@@ -130,7 +147,7 @@ section .order .order-button {
   margin-bottom: 2em;
   padding: 1em 3em 1em 3em;
   margin-top: 1em;
-  box-shadow: inset 5px 16px 50px 6px rgba(250, 90, 205, 0.71), 0px 13px 13px 0px #b0b0b0;
+  box-shadow: inset 5px 16px 50px 6px rgba(250, 90, 178, 0.71), 0px 13px 13px 0px #b0b0b0;
   font-size: 1em;
   border-radius: 2em;
   background-color: #9356DC;
@@ -139,7 +156,7 @@ section .order .order-button {
   color: white;
 }
 section .order .order-button:hover {
-  box-shadow: inset 5px 16px 50px 6px rgba(250, 148, 221, 0.71), 0px 13px 25px 0px #535353;
+  box-shadow: inset 5px 16px 50px 6px rgba(250, 148, 204, 0.71), 0px 13px 25px 0px #535353;
 }
 
 /*Responsive tablettes*/
@@ -148,6 +165,9 @@ section .order .order-button:hover {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+  }
+  section .menu-heart {
+    margin-left: 2em;
   }
   section h2 {
     text-align: center;
@@ -161,11 +181,10 @@ section .order .order-button:hover {
 }
 /*Responsive desktop*/
 @media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 2em;
+  .resto-name {
     justify-content: flex-start !important;
   }
-  h1 .far.fa-heart .fas.fa-heart {
+  .resto-name .far.fa-heart .fas.fa-heart {
     padding-left: 1em;
   }
 
