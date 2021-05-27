@@ -74,11 +74,11 @@ section .ligne {
   margin-top: -1.5em;
   margin-bottom: 1em;
 }
-section .menu-list .menu.choices {
+section .menu-list .menu_choices {
   background-color: white;
   border-radius: 1em;
   padding: 0.2em 0.5em 0.5em 0.8em;
-  box-shadow: -1px 10px 13px -5px #b0b0b0;
+  box-shadow: -1px 10px 13px -5px #b9b9b9;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
@@ -88,33 +88,38 @@ section .menu-list .menu.choices {
   animation: menu-choices-arrival;
   animation-duration: 2s;
   animation-delay: 0s;
+  transform: scale(0, 0);
+  animation-fill-mode: forwards;
 }
-section .menu-list .menu.choices :hover + .menu.right {
+section .menu-list .menu_choices :hover + .menu.right {
   transform: translate(-4.5em, 0em);
 }
-section .menu-list .menu.choices .menu.name {
+section .menu-list .menu_choices .menu.name {
   width: 95%;
+}
+section .menu-list .menu_choices .menu.name h3 {
+  font-weight: bold;
+  margin-top: 0.6em;
+  font-size: 1.1em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-section .menu-list .menu.choices .menu.name h3 {
-  font-weight: bold;
-  margin-top: 0.6em;
-  font-size: 1.1em;
-}
-section .menu-list .menu.choices .menu.name .menu.desc {
+section .menu-list .menu_choices .menu.name .menu.desc {
   margin-top: -1em;
   font-size: 0.9em;
   color: #535353;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-section .menu-list .menu.choices .menu.right {
+section .menu-list .menu_choices .menu.right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   transition: transform 350ms ease-in;
 }
-section .menu-list .menu.choices .menu.right .menu.price {
+section .menu-list .menu_choices .menu.right .menu.price {
   font-weight: bold;
   font-size: 0.8em;
   display: flex;
@@ -124,7 +129,7 @@ section .menu-list .menu.choices .menu.right .menu.price {
   background-color: white;
   height: 2em;
 }
-section .menu-list .menu.choices .menu.right .menu.check {
+section .menu-list .menu_choices .menu.right .menu.check {
   display: flex;
   align-items: center;
   background-color: #99E2D0;
@@ -132,11 +137,41 @@ section .menu-list .menu.choices .menu.right .menu.check {
   padding: 1.5em;
   margin: -0.2em -5em -0.5em 0em;
 }
-section .menu-list .menu.choices .menu.right .menu.check .fas.fa-check {
+section .menu-list .menu_choices .menu.right .menu.check .fas.fa-check {
   border-radius: 2em;
   background-color: white;
   color: #99E2D0;
   padding: 0.2em;
+}
+section .menu-list .choice1 {
+  animation-delay: 200ms;
+}
+section .menu-list .choice2 {
+  animation-delay: 400ms;
+}
+section .menu-list .choice3 {
+  animation-delay: 600ms;
+}
+section .menu-list .choice4 {
+  animation-delay: 800ms;
+}
+section .menu-list .choice5 {
+  animation-delay: 1s;
+}
+section .menu-list .choice6 {
+  animation-delay: 1200ms;
+}
+section .menu-list .choice7 {
+  animation-delay: 1400ms;
+}
+section .menu-list .choice8 {
+  animation-delay: 1600ms;
+}
+section .menu-list .choice9 {
+  animation-delay: 1800ms;
+}
+section .menu-list .choice10 {
+  animation-delay: 2s;
 }
 section .order {
   width: 100%;
@@ -147,7 +182,7 @@ section .order .order-button {
   margin-bottom: 2em;
   padding: 1em 3em 1em 3em;
   margin-top: 1em;
-  box-shadow: inset 5px 16px 50px 6px rgba(250, 90, 178, 0.71), 0px 13px 13px 0px #b0b0b0;
+  box-shadow: inset 5px 16px 50px 6px rgba(250, 90, 178, 0.71), 0px 13px 13px 0px #b9b9b9;
   font-size: 1em;
   border-radius: 2em;
   background-color: #9356DC;

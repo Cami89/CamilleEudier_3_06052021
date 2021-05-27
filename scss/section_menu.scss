@@ -58,9 +58,9 @@ section {
         margin-top: -1.5em;
         margin-bottom: 1em;
     }
-    .menu-list
-    {
-        .menu.choices {
+    .menu-list {
+
+        .menu_choices {
             background-color: white;
             border-radius: 1em;
             padding: 0.2em 0.5em 0.5em 0.8em;
@@ -74,29 +74,32 @@ section {
             animation: menu-choices-arrival;
             animation-duration: 2s;
             animation-delay: 0s;
+            transform: scale(0,0);
+            animation-fill-mode: forwards;
             
             & :hover + .menu.right {
                 transform: translate(-4.5em, 0em)
             }  
 
-
-
-
             .menu.name {
                 width: 95%;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
+
 
                 h3 {
                     font-weight: bold;
                     margin-top: 0.6em;
                     font-size: 1.1em;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
                 .menu.desc {
                     margin-top: -1em;
                     font-size: 0.9em;
                     color: $darkgrey;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
             }
 
@@ -132,6 +135,35 @@ section {
                     }
                 }
             }           
+        }
+        .choice1 {
+            animation-delay: 200ms;
+        }
+        .choice2 {
+            animation-delay: 400ms;
+        }
+        .choice3 {
+            animation-delay: 600ms;
+        }
+        .choice4 {
+            animation-delay: 800ms;
+        }
+        .choice5 {
+            animation-delay: 1s;
+        }
+        .choice6 {
+            animation-delay: 1200ms;
+        }.choice7 {
+            animation-delay: 1400ms;
+        }
+        .choice8 {
+            animation-delay: 1600ms;
+        }
+        .choice9 {
+            animation-delay: 1800ms;
+        }
+        .choice10 {
+            animation-delay: 2s;
         }
     }
     
@@ -200,4 +232,3 @@ section {
     }
 }
    
-    
