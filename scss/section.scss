@@ -71,16 +71,17 @@ section[class="resto"] {
             a[class="resto-link"] {
                 text-decoration: none;
                 color: black;
-                cursor: pointer;
                 display: flex;
                 flex-direction: column;
+                position: relative;
+                z-index: 1;
 
                 img[class=resto-pic] {   
                 width: 100%;
                 border-radius: 1em 1em 0em 0em;
                 height: 10em;
                 object-fit: cover;
-                z-index:1;
+                z-index:2;
                 }
                 .resto-new {
                 background-color: $tertiary-color ;
@@ -91,7 +92,7 @@ section[class="resto"] {
                 margin-left: 70%;
                 margin-bottom: -2.5em;
                 position: relative;
-                z-index:2;
+                z-index:3;
                 }
     
                 .resto-pres {
@@ -115,13 +116,13 @@ section[class="resto"] {
                             margin-top: 0.5em;
                             transition: background-color 250ms;
                             position: relative;
-                            z-index: 5;   
+                            z-index: 4;   
                         }   
                         .fas.fa-heart {
                             position: relative;
                             bottom: 1em;
                             color:transparent;
-                            z-index: 6;
+                            z-index: 5;
                             &:hover {
                                     
                                 animation-name: resto-heart-like;

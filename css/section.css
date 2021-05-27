@@ -21,6 +21,39 @@
     transform: scale(1, 1);
   }
 }
+@keyframes loading-background {
+  0% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  99% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes loading-object {
+  0% {
+    transform: rotate(0deg);
+    border: solid 0.5em;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    border-right-color: transparent;
+    border-left-color: #99E2D0;
+  }
+  99% {
+    transform: rotate(1080deg);
+    border: solid 0.5em;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    border-right-color: transparent;
+    border-left-color: #99E2D0;
+  }
+  100% {
+    transform: rotate(1440deg);
+    border-color: transparent;
+  }
+}
 section[class=fonct] {
   padding-left: 0.5em;
   margin-top: 2.5em;
@@ -89,16 +122,17 @@ section[class=resto] ul[class=resto-list] li[class=resto-prev] {
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] {
   text-decoration: none;
   color: black;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] img[class=resto-pic] {
   width: 100%;
   border-radius: 1em 1em 0em 0em;
   height: 10em;
   object-fit: cover;
-  z-index: 1;
+  z-index: 2;
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-new {
   background-color: #99E2D0;
@@ -109,7 +143,7 @@ section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-lin
   margin-left: 70%;
   margin-bottom: -2.5em;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres {
   background-color: white;
@@ -131,13 +165,13 @@ section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-lin
   margin-top: 0.5em;
   transition: background-color 250ms;
   position: relative;
-  z-index: 5;
+  z-index: 4;
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-hearts .fas.fa-heart {
   position: relative;
   bottom: 1em;
   color: transparent;
-  z-index: 6;
+  z-index: 5;
 }
 section[class=resto] ul[class=resto-list] li[class=resto-prev] a[class=resto-link] .resto-pres .resto-hearts .fas.fa-heart:hover {
   animation-name: resto-heart-like;

@@ -51,4 +51,33 @@ $primary-hover : -1px 10px 13px -5px $shadow;
         transform: scale(1,1);
     }
 }
- 
+@keyframes loading-background {
+    0% {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    99% {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    100% {background-color: transparent;}
+}
+@keyframes loading-object {
+    0% {
+        transform: rotate(0deg); border: solid 0.5em ;
+        border-top-color: $primary-color ;
+        border-bottom-color: $secondary-color;
+        border-right-color: transparent;
+        border-left-color: $tertiary-color ;
+    }
+
+    99% {
+        transform: rotate(1080deg); border: solid 0.5em ;
+        border-top-color: $primary-color ;
+        border-bottom-color: $secondary-color;
+        border-right-color: transparent;
+        border-left-color: $tertiary-color ;
+    }
+  
+    100% {
+        transform: rotate(1440deg); border-color: transparent; 
+    }
+}

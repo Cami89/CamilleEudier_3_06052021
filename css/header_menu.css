@@ -21,6 +21,39 @@
     transform: scale(1, 1);
   }
 }
+@keyframes loading-background {
+  0% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  99% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes loading-object {
+  0% {
+    transform: rotate(0deg);
+    border: solid 0.5em;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    border-right-color: transparent;
+    border-left-color: #99E2D0;
+  }
+  99% {
+    transform: rotate(1080deg);
+    border: solid 0.5em;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    border-right-color: transparent;
+    border-left-color: #99E2D0;
+  }
+  100% {
+    transform: rotate(1440deg);
+    border-color: transparent;
+  }
+}
 .header-top {
   margin: 0.8em auto 0.8em auto;
   display: flex;
