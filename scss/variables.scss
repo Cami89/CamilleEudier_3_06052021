@@ -68,7 +68,6 @@ $primary-hover : -1px 10px 13px -5px $shadow;
         border-right-color: transparent;
         border-left-color: $tertiary-color ;
     }
-
     99% {
         transform: rotate(1080deg); border: solid 0.5em ;
         border-top-color: $primary-color ;
@@ -76,7 +75,6 @@ $primary-hover : -1px 10px 13px -5px $shadow;
         border-right-color: transparent;
         border-left-color: $tertiary-color ;
     }
-  
     100% {
         transform: rotate(1440deg); border-color: transparent; 
     }

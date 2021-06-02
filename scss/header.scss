@@ -9,10 +9,7 @@
     animation-duration: 2.5s;
     z-index: 1000;
 
-
-
-    .loading-object {
-        
+    .loading-object { 
         margin: auto;
         position: absolute;
         top: 20em ; left:0em; right: 0em;
@@ -24,8 +21,6 @@
         transform: rotate(360deg);
         animation-name: loading-object;
         animation-duration: 2s;
-
-             
     }
 }
 
@@ -69,13 +64,9 @@ header {
     .header-button {
         padding: 1em;
         margin-top: 2em;
-        @include mixin-button ;
-        
+        @include mixin-button ;  
     }   
 
-    
-    
-    
 }   
 
 

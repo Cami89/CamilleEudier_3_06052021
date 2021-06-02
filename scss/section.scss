@@ -123,14 +123,12 @@ section[class="resto"] {
                             bottom: 1em;
                             color:transparent;
                             z-index: 5;
-                            &:hover {
-                                    
+                            &:hover {                                    
                                 animation-name: resto-heart-like;
                                 animation-duration: 500ms;
                                 animation-fill-mode: forwards;
                             }
                         }
-
                     }
                     .resto-loc {
                         margin-top: -0.5em;
