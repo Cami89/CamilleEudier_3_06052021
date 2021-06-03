@@ -17,7 +17,7 @@
     transform: scale(0, 0);
   }
   100% {
-    opacity: 1em;
+    opacity: 1;
     transform: scale(1, 1);
   }
 }
